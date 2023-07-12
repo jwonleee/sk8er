@@ -1,5 +1,4 @@
 
-
 /* 메인 이미지 슬라이딩 */
 var arr = document.querySelectorAll(".sliding .sliding-img");
 // console.log(arr);
@@ -7,7 +6,7 @@ var i = 0;
 setInterval(function() {
 
     arr[i].classList.remove("active"); //기존의 active 지우기
-    i++; //다음인데그
+    i++; //다음 인덱스
 
     if(i == arr.length) {
         i = 0; //인덱스 0으로 초기화
