@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bangers&family=East+Sea+Dokdo&family=Hahmlet:wght@400;500&family=Neucha&family=Noto+Sans+KR:wght@400;500&family=Ubuntu&display=swap" rel="stylesheet">
+     <!-- css링크 -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="write.css">
+ 
+     <!-- 제이쿼리 링크 -->
+     <script src="jquery/jquery-3.6.3.min.js"></script>
+    
+     <!-- 부트스트랩 테마가 필요하면 이쯤 추가 -->
+     
+     <!-- js링크 -->
+     <script src="js/bootstrap.min.js"></script>
+     
+</head>
+<body>
+
+    <section id="write-sec">
+
+        <h3 class="write-title">location Recommend</h3>
+        
+        <div class="main"> <!-- margin: 0 auto -->
+            <div class="pos"> <!-- 포지션 -->
+                <img src="img/icon1.png" alt="로고">
+            </div>
+            
+        <div class="wrap"> <!-- 패딩 left -->
+            <div class="left"><!-- float: left -->
+                <div class="left-inner">
+                    제목 <input type="text" class="title"> <br>
+                    작성자 <input type="text" class="writer">
+                </div>
+            </div>
+
+            <textarea name="hint" id="text" cols="50" rows="12" style="padding: 20px; font-size: 17px;" placeholder="장소를 자세하게 적어주세요"></textarea>
+            <!-- 사진파일 넣기-->
+            <div class="filebox bs3-primary preview-image">
+                <input class="upload-name" value="파일선택" disabled="disabled" style="width: 200px;">
+  
+                <label for="input_file">업로드</label> 
+                <input type="file" id="input_file" class="upload-hidden"> 
+            </div>
+
+            <!-- float:right -->
+            <button type="button" class="btn btn-warning right" onclick="listCreate()">작성 완료</button>
+        </div>
+    </div>
+
+    </section>
+
+    <!-- <script>
+        function writeClose() {
+            window.close(); //팝업창 종료
+        }
+    </script> -->
+    <script src="js/location.js"></script>
+
+</body>
+</html>

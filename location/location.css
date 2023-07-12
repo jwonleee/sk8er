@@ -1,0 +1,340 @@
+* {padding: 0; margin: 0; box-sizing: border-box;}
+a {text-decoration: none; color: white;}
+img {max-width: 100%; height: auto;}
+
+/* 
+폰트
+font-family: 'Bangers', cursive;
+font-family: 'East Sea Dokdo', cursive;
+font-family: 'Hahmlet', serif;
+font-family: 'Neucha', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+body, html{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.title {
+    font-family: 'Bangers', cursive;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.header {
+    position: relative;
+    width: auto;
+    z-index: 5;
+}
+
+.header .title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 150px;
+    padding-left: 100px;
+    color: rgb(252, 102, 15);
+    background-color: rgb(29, 29, 29);
+}
+
+/* #left-btn {
+    position: fixed;
+    top: 1000px;
+    left: 50px;
+    color: yellow;
+    font-size: 500px;
+}
+
+#right-btn {
+
+} */
+
+
+#sec {
+    padding: 150px 100px 100px;
+}
+
+#sec .sub-title {
+    width: 100%;
+    height: 400px;
+}
+
+#sec .sub-title .sliding {position: relative;}
+
+#sec .sub-title .sliding .sliding-img {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /* background-size: cover와 같음 */
+    display: none;
+    /* object-position: 0 -750px; */
+}
+
+#sec .sub-title .sliding .active { display: inline; animation: fadeIn 2s ease-in-out;}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+#sec .sliding-text { /* 포지션으로 올리기 */
+    position: absolute;
+    top: 250px;
+    left: 0;
+    text-align: center;
+    padding-top: 55px;
+    width: 100%;
+    text-shadow: -0.8px 0 #000, 0 0.8px #000, 0.8px 0 #000, 0 -0.8px #000;
+}
+
+#sec .sliding-text > p {
+    color: rgb(252, 102, 15);
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+#nav .sub-nav {
+    position: relative;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#nav .sub-nav .ad-text {
+    margin-top: 180px;
+    margin-bottom: 180px;
+    font-size: 100px;
+}
+#nav .sub-nav li:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+}
+
+#nav .sub-nav li:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#search #content {
+    width: auto;
+    position: relative;
+}
+
+#re-locations .content-title {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+#re-locations .content-title .title {
+    font-size: 40px;
+    margin-bottom: 10px;
+    /* letter-spacing: 1.5px; */
+    font-family: 'Neucha', cursive;
+    color: #F1C164;
+    text-shadow: 3px 3px #2D63A7;
+}
+
+#re-locations .content-title .text{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#re-locations .content-title .search-select {
+    margin-bottom: 50px;
+}
+
+#re-locations .search-select .tit{
+    padding-bottom: 15px;
+}
+
+#re-locations .search-select table {
+    border-top: 3px solid rgb(190, 190, 190);
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+#re-locations .search-select th {
+    text-align: center;
+    /* font-size: 15px; */
+    width: 170px;
+    padding: 20px 50px;
+}
+
+#re-locations .checkWrap label {
+    padding-right: 52px;
+}
+
+#re-locations .checkWrap input {
+    margin-right: 10px;
+}
+
+#search tr > *{
+    border-bottom: 0.1px solid #ddd;
+    padding: 25px 0 25px;
+}
+
+#search tr > .checkWrap{
+    border-bottom: 0.1px solid #ddd;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+#search .areaWrap .clbl {
+    display: inline-block;
+    width: 100px;
+    height: 33px;
+    line-height: 33px;
+    border: 0.5px solid #ddd;
+    border-radius: 35px;
+    text-align: center;
+    line-height: 33px;
+    color: #fff;
+    margin-right: 14px;
+    /* margin-bottom: 15px; 한줄이라는 전제하에 */
+}
+
+#search .areaWrap .clbl:active {background-color: #326fb9;}
+
+#search .clbl.active {
+    background: #3879c9;
+    color: #fff;
+    border-color: #3879c9;
+}
+
+#search .areaWrap li {
+    display: inline-block;
+    padding: 3px;
+}
+
+#areaImg {
+    padding: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+#areaImg .areaImg-wrap .img-wrap {
+    /* overflow: hidden; */
+    /* text-align: center; */
+    margin: 0 auto;
+    content: center;
+}
+
+#areaImg .areaImg-wrap { /* 기본으로 display:none */
+    display: none;
+    overflow: hidden;
+}
+
+#areaImg .loActive{
+    display: block;
+}
+
+#areaImg .areaImg-wrap .img-wrap img{
+    float: left;
+    margin: 20px;
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#areaImg .areaImg-wrap .img-wrap img:hover{
+    filter: brightness(0.4);
+}
+
+
+
+#board .bwrap {
+    width: 100%;
+    overflow: hidden;
+    /* margin: 50px 0; */
+}
+
+#board .board-container {
+        padding-top: 80px;
+        text-decoration: none;
+        /* overflow: hidden; */ /* 이거 다시 해야 할 수도 있음!!!!!!!!!! */
+        /* background-color: #d38156; */
+    }
+    
+    #board .board-container .board-img{
+        /* position: absolute; */
+        left: 1100px;
+        top: 20px;
+    }
+    
+    #board .write-btn > .btn {
+        float: right;
+        color: #F1C164;
+        width: 150px;
+        margin-right: 10px;
+        margin-top: 25px;
+    }
+    
+    
+    #board .board-container .board-item:link {color: rgb(255, 255, 255);}
+    /* #board .board-container .board-item:visited {color: rgb(228, 55, 55);} */
+#board .board-container .board-item:hover {color: #4592f0;}
+#board .board-container .board-item:active {color: #326fb9;}
+
+/* 호버했을때 만들기, 리스트 */
+
+.board-item { /* a태그 */
+    padding-bottom: 10px;
+    flex-direction: row;
+    display: inline-block;
+    flex-wrap: wrap;
+    align-content: space-around;
+    /* position: relative; */
+}
+
+.board-item h4{
+    float: left;
+}
+
+.board-title {
+    width: 600px;
+}
+
+.board-writer {
+    width: 400px;
+}
+
+/* .board-item .board-content {
+    display: none;
+    height: 200px;
+    padding-top: 50px;
+}
+
+.board-item .bactive {
+    display: block;
+} */
+
+
+
+
+
+
+
+.footer .content {
+    background-color: rgb(233, 217, 187);
+    color: rgb(252, 102, 15);
+    font-weight: 600px;
+    margin: 0 auto;
+    padding: 40px 100px;  
+    /* -webkit-transform: skew(0deg, 10deg);  
+    -moz-transform: skew(0deg, 10deg);  
+    -ms-transform: skew(0deg, 10deg);  
+    -o-transform: skew(0deg, 10deg);  
+    transform: skew(0deg, 10deg);  */
+}

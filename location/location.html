@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bangers&family=East+Sea+Dokdo&family=Hahmlet:wght@400;500&family=Neucha&family=Noto+Sans+KR:wght@400;500&family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- css링크 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="location.css">
+
+    <!-- 제이쿼리 링크 -->
+    <script src="jquery/jquery-3.6.3.min.js"></script>
+    
+    <!-- 부트스트랩 테마가 필요하면 이쯤 추가 -->
+    
+    <!-- js링크 -->
+    <script src="js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    
+    <header class="header">
+        <div class="title">sk8er ━━</div>
+    </header>
+    
+    <button id="left-btn">왼쪽</button>
+    <button id="right-btn">오른쪽</button>
+    
+    <section id="sec">
+        <div class="sub-title"><!-- 이미지, 텍스트 넣기 아직 -->
+            <div class="sliding">
+                <img src="img/sk10.jpg" class="sliding-img active" alt="타이틀이미지">
+                <img src="img/sk4.jpg" class="sliding-img" alt="타이틀이미지">
+                <img src="img/sk12.jpg" class="sliding-img" alt="타이틀이미지">
+                <img src="img/sk8.jpg" class="sliding-img" alt="타이틀이미지">
+            </div>
+            <div class="sliding-text">
+                <h2>Recommend Location</h2>
+                <p>보더들이 직접 추천한 스팟</p>
+            </div>
+        </div>
+        
+        
+        <!-- navigator 아직 미정 -->
+        <div id="nav">
+            
+            <ul class="sub-nav">
+                <!-- <p class="ad-text">
+                    <MARQUEE hspace="100" vspace="100" width="100%">광고문의</MARQUEE>
+                </p> -->
+                <img src="img/banner.jpg" alt="광고배너">
+                <!-- <li>
+                    <a href="#">
+                        <i><img src="/img/icon1.png"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">hot spot</a>
+                    <ul>
+                        <li><a href="#">서울</a></li>
+                        <li><a href="#">경기</a></li>
+                        <li><a href="#">대전</a></li>
+                        <li><a href="#">부산</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+        
+        
+        <!-- start content -->
+        <article id="search"> <!-- 검색 관련 -->
+            <div id="content" class="sub-list">
+                <div id="re-locations">
+
+                    <div class="content-title">
+                        <h3 class="title">Skateboard hot spot</h3>
+                        <p class="text">street, park, downhill 등 보더들이 직접 추천하는 장소를 만나보세요</p>
+                    </div>
+
+                    <div class="search-select">
+                        <!-- <h4 class="tit">스케이트 보드 장소 검색</h4> -->
+                        <form action="#"> 
+                            <table>
+                                <tbody>
+                                    
+                                    <tr>
+                                        <th>
+                                            <strong> 스팟 타입 </strong>
+                                        </th>
+                                        <td>
+                                            <div class="checkWrap">
+                                                <label>
+                                                    <input type="checkbox" name="type_id" value="A">STREET
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="type_id" value="B">PARK
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="type_id" value="B">DOWNHILL
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            <strong> 지역 선택 </strong>
+                                        </th>
+                                        <td>
+                                            <div class="areaWrap">
+                                                <li>
+                                                    <label class="clbl">
+                                                        <input type="checkbox" data-id="#area_id1" class="custom" style="display: none;"> 전체
+                                                    </label>
+                                                    <label class="clbl">
+                                                        <input type="checkbox" data-id="#area_id2" class="custom" style="display: none;"> 강남구
+                                                    </label>
+                                                    <label class="clbl">
+                                                        <input type="checkbox" data-id="#area_id3" class="custom" style="display: none;"> 강북구
+                                                    </label>
+                                                    <label class="clbl">
+                                                        <input type="checkbox" data-id="#area_id4" class="custom" style="display: none;"> 동대문구
+                                                    </label>
+                                                    <label class="clbl">
+                                                        <input type="checkbox" data-id="#area_id5" class="custom" style="display: none;"> 송파구
+                                                    </label>
+                                                    <label class="clbl">
+                                                        <input type="checkbox" data-id="#area_id6" class="custom" style="display: none;"> 영등포구
+                                                    </label>
+                                                    <label class="clbl">
+                                                        <input type="checkbox" data-id="#area_id7" class="custom" style="display: none;"> 종로구
+                                                    </label>
+                                                </li>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    <tr id="areaImg">
+                                        <td><strong>위치</strong></td>
+                                        <td class="areaImg-wrap loActive" id="area_id1" >
+                                            <div class="img-wrap">
+                                                <img src="img/sk4.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/spot2.jpeg" alt="선택된 지역 이미지">
+                                                <img src="img/sk9.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/sk7.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/spot2.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/spot3.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/spot4.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/spot5.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/spot6.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/spot7.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/point.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/point2.jpg" alt="선택된 지역 이미지">
+                                            </div>
+                                        </td>
+                                        <td class="areaImg-wrap" id="area_id2" >
+                                            <div class="img-wrap">
+                                                <img src="img/sk4.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/spot2.jpeg" alt="선택된 지역 이미지">
+                                                <img src="img/sk9.jpg" alt="선택된 지역 이미지">
+                                            </div>
+                                        </td>
+                                        <td class="areaImg-wrap" id="area_id3" >
+                                            <div class="img-wrap">
+                                                <img src="img/sk7.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/spot2.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/spot3.jpg" alt="선택된 지역 이미지">
+                                            </div>
+                                        </td>
+                                        <td class="areaImg-wrap" id="area_id4">
+                                            <div class="img-wrap">
+                                                <img src="img/spot4.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/spot5.jpg" alt="선택된 지역 이미지">
+                                            </div>
+                                        </td>
+                                        <td class="areaImg-wrap" id="area_id5">
+                                            <div class="img-wrap">
+                                                <img src="img/spot6.jpg" alt="선택된 지역 이미지">
+                                            </div>
+                                        </td>
+                                        <td class="areaImg-wrap" id="area_id6">
+                                            <div class="img-wrap">
+                                                <img src="img/spot7.jpg" alt="선택된 지역 이미지">
+                                            </div>
+                                        </td>
+                                        <td class="areaImg-wrap" id="area_id7">
+                                            <div class="img-wrap">
+                                                <img src="img/point.jpg" alt="선택된 지역 이미지">
+                                                <img src="img/point2.jpg" alt="선택된 지역 이미지">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </article>
+
+        <article id="board"><!-- 게시판 -->
+            <div class="bwrap">
+                <div class="write-btn">
+                    <button type="button" class="btn btn-warning" style="color: black; border-radius: 0;" onclick="window.open('write.html', '글쓰기', 'width=1000, height=800, top=100px, left=300px, status=no, scrollbars=no, resizable=none')">글 작성</button>
+                </div>
+                <div class="board-container">
+                   
+                        <a class="board-item" onclick="boardOpen(this)"> <!-- 우선 href 지우고 그냥 class로 보이게.. -->
+                            <h4 class="board-title">라온제나 스케이트파크 꼭 가세요</h4>
+                            <h4 class="board-writer">개미는뚝섬</h4>
+                            <!-- <div class="board-content">
+                                <p>라온제나 가보셨나요? <br>
+                                    어제 처음갔는데 완전 좋아요 <br>
+                                    생각보다 사람도 없고, 기물도 엄청 많음
+                                </p>
+                                <img src="/img/sk13.jpg" class="board-img" style="width: 300px; height: 300px; object-fit: cover;" alt="클릭이미지">
+                            </div> -->
+                        </a>
+                        <a class="board-item" >
+                            <h4 class="board-title">서울 난지 스케이트파크</h4>
+                            <h4 class="board-writer">알리탄지2년차</h4>
+                        </a>
+                        <a class="board-item" >
+                            <h4 class="board-title">한강 숨겨진 스팟</h4>
+                            <h4 class="board-writer">탑니다기물</h4>
+                        </a>
+                        <a class="board-item" >
+                            <h4 class="board-title">저만 아는 곳인데 와서 같이 타요</h4>
+                            <h4 class="board-writer">시크릿걸</h4>
+                        </a>
+                        <a class="board-item" >
+                            <h4 class="board-title">새로 생긴 스케이트파크인듯?</h4>
+                            <h4 class="board-writer">주행보단기술</h4>
+                        </a>
+                        <a class="board-item" >
+                            <h4 class="board-title">송도에도 생김</h4>
+                            <h4 class="board-writer">크루저인</h4>
+                        </a>
+                        <a class="board-item" >
+                            <h4 class="board-title">서울숲에도 있는거 알아요?</h4>
+                            <h4 class="board-writer">longboardgood</h4>
+                        </a>
+                        <a class="board-item" >
+                            <h4 class="board-title">시흥사람들 보세요</h4>
+                            <h4 class="board-writer">3주차보더</h4>
+                        </a>
+                        <a class="board-item" >
+                            <h4 class="board-title">수원러 여기가 핫스팟</h4>
+                            <h4 class="board-writer">비글희정</h4>
+                        </a>
+                        <a class="board-item" >
+                            <h4 class="board-title">청담도 있다고!!!</h4>
+                            <h4 class="board-writer">윤시윤시</h4>
+                        </a>
+                        
+                        <!-- <div class="board-img"> 포지션으로 올려줘서 z 줘야겠음
+                            <img src="/img/sk13.jpg" style="width: 300px; height: 300px; object-fit: cover;" alt="클릭이미지">
+                        </div> -->
+                </div>
+            </article>
+            
+        </section>
+        
+        
+        <footer class="footer">
+            <div class="content">
+                <h3>sk8er</h3>
+                <p>Creater 희정┃시윤┃지원</p>
+                <p>Copyright Ⓒ 2023 Sk8er. All Rights Reserved</p>
+            </div>
+        </footer>
+        
+        <script src="js/location.js"></script>
+        
+    </body>
+    </html>
