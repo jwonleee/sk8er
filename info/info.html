@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- css링크 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="info.css">
+
+    <!-- 제이쿼리 링크 -->
+    <script src="jquery/jquery-3.6.3.min.js"></script>  
+ 
+    <!-- js링크 -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- 폰트링크 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=East+Sea+Dokdo&family=Hahmlet:wght@400;500&family=Neucha&family=Noto+Sans+KR:wght@400;500&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- swiper링크 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body style="background-color: rgb(29, 29, 29);">
+    
+     <!-- 고정헤더 -->
+    <header class="header">
+        <div class="title">sk8er ━━</div>
+    </header>
+
+    <!-- 영상 -->
+    <section class="main_banner_sec">      
+        <div align="center">
+            <iframe width="1520" height="1100" 
+            src="https://www.youtube.com/embed/G32de-xjhsQ?autoplay=1&mute=1&start=11&modestbranding=1&amp=playlist=G32de-xjhsQ&loop=1" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+       <!--  
+        <div class="slide_wrap">
+            <img src="img/bg1.jpg" class="slideImg active">
+            <img src="img/bg2.jpg" class="slideImg">
+            <img src="img/bg3.jpg" class="slideImg">
+        </div>
+        -->     
+       
+    </section>
+
+    <section class="sec_content" align="center">
+        <div class="cInfo">
+            <img src="img3/cu.jpg" alt="문화">
+        </div>
+        <div class="hover_cont">
+            <p>내용...</p>
+        </div>
+    </section>
+    
+    
+    <!-- 보드소개 -->
+    <section class="info_web sec_content" align="center">
+        <h1 class="contTitle_eng">about skateboard</h1> 
+        
+            <div class="info_overflow info InfoActive" id="1">
+                <div class="info_left move"> 
+                    <img src="img3/s1.jpg">                          
+                </div>
+                <div  class="info_left">
+                    <h4 style="font-family: 'Noto Sans KR', sans-serif;">스탠다드 스케이트보드</h4>
+                    <p class="tt info_text">
+                        데크 윗부분부터 휠 바닥까지의 높이가 낮으며 휠이 작고 딱딱하여 안정성이 좋고,
+                        
+                        중심잡기가 쉽습니다. 
+                    
+                        그러나 딱딱한 휠 때문에 보드를 타는 바닥이 좋지 못하면 타기가
+                        
+                        힘듭니다. 무게가 가볍고 튼튼하여 주로 트릭 및 묘기 전용으로 사용되며,
+                        
+                        주행만을 위한 목적으로는 부적합하다고 하네요. <br>
+                        
+                        > 근처에 보드장이 있고, 주행보다는 트릭을 연습하고 싶으신 분들에게 추천.
+                    </p>
+                </div>
+            </div>
+
+            <div class="info_overflow info" id="2">
+                <div class="info_left move">
+                    <img src="img3/s4.jpg">           
+                </div>
+                <div class="info_left">
+                    <h4 style="font-family: 'Noto Sans KR', sans-serif;">롱보드</h4>
+                    <p class="tt info_text">최근에 가장 유행하는 보드가 아닌가 싶습니다.
+
+                        긴 데크 덕에 안정성이 좋고 균형 잡기도 쉽지만, 휴대하기가 쉽지 않습니다.
+                        
+                        롱보드는 타는 목적에 따라 다시 두 가지 유형으로 나뉩니다.
+                        
+                        구불구불한 내리막길을 뒷짐지고 내달리는 '다운힐',
+                        
+                        평지 주행 중 넓은 데크 위에서 스텝을 밟으며 타는 '댄싱'.
+                        
+                        다운힐이나 댄싱이나 유튜브에서 롱보드 영상 보시면, 이거 왜 타는지 아시게 될 겁니다.
+                        
+                        남자든 여자든 진짜 멋있습니다. <br>
+                        
+                        > 중장거리 주행 및 '다운힐/댄싱'을 하고 싶은 분들께 추천.
+                    </p>
+                </div>
+            </div>
+
+            <div class="info_overflow info" id="3">
+                <div class="info_left move">
+                    <img src="img3/s6.jpg" >           
+                </div>
+                <div class="info_left">
+                    <h4 style="font-family: 'Noto Sans KR', sans-serif;">크루져보드</h4>
+                    <p class="tt info_text">작은 데크, 크고 쿠션감 있는 휠을 가지고 있어서 휴대가 간편하고 주행용으로
+
+                        적당한 대신, 중심잡기가 어려워서 안정성이 떨어집니다. 발을 자주 굴러줘야 해서
+                        
+                        장거리 주행 시에는 쉽게 피로해질 수 있어요. 보드 중에서 휴대성은 짱이지만, 숙달되기가 쉽지 않답니다.<br>
+                        
+                        > 인도 및 공터에서 단거리 주행 위주로 즐길 예정이면서, 끈기가 있으신 분들에게 추천.
+                    </p>
+                </div>
+            </div>
+
+            <div class="info_overflow info" id="4">
+                <div class="info_left move">
+                    <img src="img3/s8.jpg">           
+                </div>
+                <div class="info_left">
+                    <h4 style="font-family: 'Noto Sans KR', sans-serif;">서프스케이트보드</h4>
+                    <p class="tt info_text">
+                        겨울에 서핑을 못하는 서퍼들을 위해 생겼다는 이야기가 있습니다 
+                    서프스케이트보드는 서핑보드와 비슷한 형태의 데크를 가지고 있고, 서핑의 카빙/턴과 흡사한 주행감을
+                        
+                        위해 트럭이 움직이는 범위가 일반 스케이트보드보다 훨씬 크다고 합니다. 
+                        
+                        익숙해지면 서핑을 하는 듯이 재밌다고 하지만, 처음 타면 안정감이 떨어지기 때문에
+                        
+                        숙달까지 시간이 꽤 오래 걸립니다.<br>
+                        
+                        > 서핑을 좋아하지만 바다가 멀어서 못 가시는 분들께 추천.</p>
+                </div>
+            </div>
+        
+    
+        <div class="pr">
+            <button class="btn" style="vertical-align:middle">next</button>
+        </div>
+    </section>
+    <!-- 보드소개 end-->
+    
+
+    <!-- 핫이슈 -->
+    <section class="wrap_event sec_content" >
+        <!-- 페스티벌 포스터 -->
+        <h3 class="tt" style="color: #fff;">Skateboard Issue</h3>
+
+
+
+        <div class="hotLeft">
+        <div class="contTitle_eng">Festival</div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="eventBigBox"><!-- 오버1 -->
+
+                    <div class="eventBox">
+                        <a href="#">
+                            <div class="event_imgbox">
+                                <img src="img3/event5.jpg" alt="레드불과 함께">
+                            </div>
+                            <div class="event_title">레드불과 함께 떠나는 </div>
+                            <div class="event_subTitle">14일간 스케이트 보드 전국 투어</div>
+                        </a>
+                    </div>
+                    <div class="eventBox">
+                        <a href="#">
+                            <div class="event_imgbox">
+                                <img src="img3/event7.jpg" alt="여름스케이트">
+                            </div>
+                            <div class="event_title">여름 스케이트보드  </div>
+                            <div class="event_subTitle">스케이트보드 페스티벌 참여 모집</div>
+                        </a>
+                    </div>
+                    <div class="eventBox">
+                        <a href="#">
+                            <div class="event_imgbox">
+                                <img src="img3/event6.jpg" alt="부산스케이트">
+                            </div>
+                            <div class="event_title">부산 보트 페스티벌 </div>
+                            <div class="event_subTitle">부산시티에서 열리는 <br> 스케이트보드 페스티벌</div>
+                        </a>
+                    </div> 
+
+                </div>
+
+              </div>
+              <div class="swiper-slide">
+                <div class="eventBigBox"><!-- 오버2 -->
+
+                    <div class="eventBox">
+                        <a href="#">
+                            <div class="event_imgbox">
+                                <img src="img3/event5.jpg" alt="레드불과 함께">
+                            </div>
+                            <div class="event_title">레드불과 함께 떠나는 </div>
+                            <div class="event_subTitle">14일간 스케이트 보드 전국 투어</div>
+                        </a>
+                    </div>
+                    <div class="eventBox">
+                        <a href="#">
+                            <div class="event_imgbox">
+                                <img src="img3/event7.jpg" alt="여름스케이트">
+                            </div>
+                            <div class="event_title">여름 스케이트보드  </div>
+                            <div class="event_subTitle">스케이트보드 페스티벌 참여 모집</div>
+                        </a>
+                    </div>
+                    <div class="eventBox">
+                        <a href="#">
+                            <div class="event_imgbox">
+                                <img src="img3/event6.jpg" alt="부산스케이트">
+                            </div>
+                            <div class="event_title">부산 보트 페스티벌 </div>
+                            <div class="event_subTitle">부산시티에서 열리는 <br> 스케이트보드 페스티벌</div>
+                        </a>
+                    </div> 
+
+                </div>
+
+              </div>
+
+              <div class="swiper-slide">
+                <div class="eventBigBox"><!-- 오버3 -->
+
+                    <div class="eventBox">
+                        <a href="#">
+                            <div class="event_imgbox">
+                                <img src="img3/event5.jpg" alt="레드불과 함께">
+                            </div>
+                            <div class="event_title">레드불과 함께 떠나는 </div>
+                            <div class="event_subTitle">14일간 스케이트 보드 전국 투어</div>
+                        </a>
+                    </div>
+                    <div class="eventBox">
+                        <a href="#">
+                            <div class="event_imgbox">
+                                <img src="img3/event7.jpg" alt="여름스케이트">
+                            </div>
+                            <div class="event_title">여름 스케이트보드  </div>
+                            <div class="event_subTitle">스케이트보드 페스티벌 참여 모집</div>
+                        </a>
+                    </div>
+                    <div class="eventBox">
+                        <a href="#">
+                            <div class="event_imgbox">
+                                <img src="img3/event6.jpg" alt="부산스케이트">
+                            </div>
+                            <div class="event_title">부산 보트 페스티벌 </div>
+                            <div class="event_subTitle">부산시티에서 열리는 <br> 스케이트보드 페스티벌</div>
+                        </a>
+                    </div> 
+
+                </div>
+
+              </div>
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+             
+
+     <!-- 추천정보 리스트 -->
+        <div class="hotRight">
+            <div class="contTitle_eng">info</div>            
+            <ul class="keyword-list">
+                <li><a href="#">스케이브보드 할인</a></li>
+                <li><a href="#">스사모 인원모집</a></li>
+                <li><a href="#">알바모집?</a></li>
+                <li><a href="#">코딩어렵다</a></li>
+                <li><a href="#">너어무어렵다</a></li>
+                <li><a href="#">미치겠네</a></li>
+            </ul>
+            
+        </div>
+        
+    </section>
+    <!-- 핫이슈 end -->
+   
+    <footer class="footer">
+        <div class="content">
+            <h3>sk8er</h3>
+            <p>Creater 희정┃시윤┃지원</p>
+            <p>Copyright Ⓒ 2023 Sk8er. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="info.js"></script>
+
+
+</body>
+</html>

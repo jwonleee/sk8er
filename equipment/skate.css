@@ -1,0 +1,539 @@
+* {padding:0; margin:0; list-style:none; box-sizing: border-box; text-decoration: none;}
+img{max-width:100%; height: auto;}
+/* 
+폰트
+font-family: 'Bangers', cursive;
+font-family: 'East Sea Dokdo', cursive;
+font-family: 'Hahmlet', serif;
+font-family: 'Neucha', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+
+/* header */
+/* body{
+    background-color:rgba(255, 235, 205, 0.067);
+} */
+
+.title {
+    font-family: 'Bangers', cursive;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.header {
+    position: relative;
+    width: auto;
+    z-index: 5;
+}
+
+.header .title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 110px;
+    padding-left: 50px;
+    color: rgb(252, 102, 15);
+    background-color: rgb(29, 29, 29);
+}
+
+/* body */
+
+.body_img{
+    padding: 100px 70px;
+    background-color: rgba(255, 235, 205, 0.182);
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+ 
+}
+
+.body_img h3{
+    width:300px;
+    height:300px;
+    float:left;
+}
+
+.body_img .body_content1 {
+    display: inline;
+    width: 300px;
+    height: 120px;
+    float:right;
+    padding: 10px;
+    margin :10px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    text-align: center;
+    margin-top: -30px;
+    /* color: rgba(34, 34, 34, 0.726); */
+}
+
+.body_img .body_content1:hover{
+    transition: all 0.3s ease-out;
+    background-color: rgba(34, 34, 34, 0.03);
+}
+
+
+.body_img .body_content1 a{
+    color: rgba(34, 34, 34, 0.792);
+}
+
+.body_img .body_content2 a{
+    color: rgba(34, 34, 34, 0.792);
+}
+
+.body_img .body_content1 a h4{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 8px 0;
+}
+
+.body_img .body_content2 a h4{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 8px 0;
+}
+
+.body_img .body_content1 a p{
+    /* padding : 0 0 0 2px; */
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom: 20px;
+
+}
+
+.body_img .body_content2 a p{
+    /* padding : 0 0 0 2px; */
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom: 20px;
+}
+
+
+.body_img .body_content2 {
+    display: inline;
+    width: 300px;
+    height: 120px;
+    float:right;
+    padding: 10px 10px;
+    margin :10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.body_img .body_content2:hover{
+    transition: all 0.3s ease-out;
+    background-color: rgba(34, 34, 34, 0.03);
+}
+
+
+#sec .body_img div a {
+    display: inline-block;
+    
+}
+
+.body_img .body_content3 {
+    display: inline;
+    width: 300px;
+    height: 120px;
+    float:right;
+    padding: 10px 10px;
+    margin :10px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.body_img .body_content3:hover{
+    transition: all 0.3s ease-out;
+    background-color: rgba(34, 34, 34, 0.03);
+}
+
+.body_img .body_content3 a h4{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 8px 0;
+}
+
+.body_img .body_content3 a p{
+    /* padding : 0 0 0 2px; */
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom: 20px;
+}
+
+.body_img .body_content3 a{
+    color: rgba(34, 34, 34, 0.792);
+}
+
+
+/* 
+.body_img >img{
+   height:50%;
+   width:100%;
+} */
+
+
+
+
+/* .title2{
+    font-family: 'Noto Sans KR', sans-serif;
+} */
+
+.info {
+    padding: 30px 0;
+    text-align: center;
+    background: url(img2/sk20.jpg);
+    background-position: 20% 30%;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.info .info_blur{
+    /* display: inline; */
+    width: 1000px;
+    height: 300px;
+    background-color: rgba(0, 0, 128, 0.018);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 7px 15px 8px rgba(0, 0, 0, 0.03);
+    margin-top:100px;
+   
+}
+
+
+.info .info_blur .up_title{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Acme', sans-serif;
+    margin: 35px;
+    color: rgb(29, 29, 29);
+}
+
+.info .info_blur .up_title .inner{
+    color: rgb(252, 102, 15);
+    text-shadow: -1.7px 0px rgb(29, 29, 29), 0px 1.7px rgb(29, 29, 29), 1.7px 0px rgb(29, 29, 29), 0px -1.7px rgb(29, 29, 29);
+
+}
+
+.info .info_blur .contents {
+    padding: 10px 0;
+    font-family: 'Comic Neue', cursive; 
+    font-size: 20px;
+    color: rgb(29, 29, 29);
+}
+
+/* #sec{
+    width:100%;
+} */
+
+.popular{
+    padding: 30px 0;
+    text-align: center;
+    background: url(img2/john.jpg);
+    background-position: 20% 30%;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* .info {
+    padding: 30px 0;
+    text-align: center;
+    background: url(img/sk20.jpg);
+    background-position: 20% 30%;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} */
+.popular .popularContent .popularTitle{
+    font-family: 'Bangers', cursive;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.popular .popularContent{
+    text-align: left;
+    font-family: 'Comic Neue', cursive; 
+    font-size:22px;
+    color:whitesmoke;
+    padding: 40px;
+    float:left;
+}
+
+
+
+.popular img{
+    /* border-radius: 50%; */
+    width:150px;
+    /* height:300px; */
+    border: 0;
+    position:relative;
+    margin : 0 30px;
+    box-shadow : 0 0 25px 25px rgba(0, 0, 0, 0.586);
+    filter: grayscale(100%);
+    border-radius: 20px;
+    float:left;   
+}
+
+
+.popular img:hover{
+   filter: brightness(1);
+}
+
+.popular .img1{
+    margin-top: -20px;
+}
+
+.popular .img2{
+    margin-top : 30px;
+}
+
+.popular .img3{
+    margin-top : 60px;
+}
+
+
+.popular .popularImg:hover .imgName1{
+    opacity: 1; 
+}
+
+.popular .popularImg:hover .imgName2{
+    opacity: 1;  
+}
+
+.popular .popularImg:hover .imgName3{
+    opacity: 1; 
+}
+
+
+.recommend{
+    width:100%;
+    height: 800px;
+    padding: 10px 100px;
+    margin-top: 40px;
+    overflow: hidden;
+    background: url(http://fiximage.10x10.co.kr/web2018/main/bg_pattern_line.png) 0 0 repeat-x;
+    background-color: rgba(34, 34, 34, 0.008);
+    
+}
+
+
+/* font-family: 'Acme', sans-serif;
+font-family: 'Amatic SC', cursive;
+font-family: 'Comic Neue', cursive;
+font-family: 'DM Serif Display', serif; */
+
+
+
+
+.recommend .recommendTitle .reMenu .reItem span{
+    font-family: 'Acme', sans-serif;
+    font-size:45px;
+    margin-bottom:3px;
+    color:rgb(29, 29, 29);
+    font-weight: 700;
+    position: relative;
+    
+}
+
+
+.reMenu{
+    margin-top: 50px;
+}
+
+/* YUN */
+.reItem{
+    display: inline-block;
+    font-size: 4rem;
+    /* line-height: 1.25;
+    word-break: keep-all; */
+    cursor: pointer;
+    margin-right: 0.625rem;
+
+}
+.reItem span{
+    display: inline-block;
+    border-bottom: solid 0.35rem transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.reItem span.active{
+    border-bottom: solid 0.35rem #222;
+    transition: all 0.5s ease-in-out;
+}
+
+.reItem::after{
+    content: ',';
+    display: inline-block;
+}
+
+.reItem:last-child:after{
+    content:"";
+}
+
+.recommendBox{
+    margin:40px 0;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
+
+}
+.recommendBox.active{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    display:block;
+    pointer-events: auto;
+}
+
+/* .recommendBox.active::after body{
+    background: rgba(207, 134, 38, 0.658);
+} */
+
+/* .recommendBox.active::after .recommendBox.third{
+    background-color: rgba(9, 251, 90, 0.545);
+} */
+
+
+
+/* .recommend img{
+    border-radius: 50%;
+    width:180px;
+    height:180px;
+    border: 0;
+    position:relative;
+    margin : 30px 30px;
+    box-shadow : 0 0 15px 15px rgba(0, 0, 0, 0.586);
+    filter: grayscale(90%);
+    border-radius: 5px;
+    float:left;
+      
+} */
+
+.recommendContent2 {
+    float: left;
+    margin:0 35px;
+    text-align: center;
+}
+
+.recommendContent2 .recommendImg{
+    width: 250px;
+    height: 250px;
+    margin-top: 70px;
+    /* border:1px solid rgba(0, 0, 0, 0.171); */
+  
+}
+
+
+.recommendContent2 .recommendGear1{
+    width: 250px;
+}
+
+
+.recommendContent2 .recommendGear1 a{
+    
+    color:rgba(20, 20, 20, 0.684);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.recommendContent2 .recommendGear1 .recommendGear1_T{
+    font-size: 18px;
+    font-weight: 2000;
+    font-family: 'Comic Neue', cursive; 
+    margin-bottom: 20px;
+    color: rgb(252, 102, 15);
+
+}
+
+
+.footer .content {
+    /* z-index: 2; */
+    background-color: rgb(233, 217, 187);
+    color: rgb(252, 102, 15);
+    font-weight: 600px;
+    margin: 0 auto;
+    padding: 40px 50px;  
+  } 
+
+  /* 팝업창 */
+
+.bo{
+    background-color: rgb(29, 29, 29);
+   color: whitesmoke;
+
+}
+
+.login{
+    width:100%;
+    height: 100px;
+    /* line-height: 100px; */
+    text-align: center;
+    margin-top: 120px;
+    
+  
+}
+
+  .id{
+    width: 350px;
+    height: 35px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
+
+  .pw{
+    width: 350px;
+    height: 35px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+  }
+  
+
+.btn{
+    width: 350px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0); 
+    background-color: rgb(252, 102, 15);
+    color:black;
+    font-family: 'Comic Neue', cursive; 
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .btn:hover{
+    cursor: pointer;
+  }
+
+
+  .various{
+    margin-top:15px;
+   
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+   color: whitesmoke;
+
+  }
+
+  .various p a{
+   color: whitesmoke;
+  }
